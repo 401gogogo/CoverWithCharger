@@ -28,5 +28,5 @@ python train.py --sixray_root data_root --imagesetfile data_set_root
 ```
 ### Result ###
 我们提供我们的训练数据和结果，如下图所示：
-+ 1 .![mAP](/result.png)
-+ 2 .![Loss](/1_2_iter.png)
++ ![mAP](/result.png)
++ ![Loss](/1_2_iter.png)
