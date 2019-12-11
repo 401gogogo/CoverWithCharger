@@ -19,12 +19,12 @@
 ###### 4. Evaluation
 ```
 cd CoverWithCharger
-python eval_5epoch_for.py --trained_model you_own_model_root
+python eval_5epoch_for.py --trained_model you_own_model_root --sixray_root data_root --imagesetfile data_set_root
 ```
 ###### 5. Training:
 ```
 cd CoverWithCharger
-python train.py --sixray_root data_root --imagesetfile data_set_root
+python train.py 
 ```
 ### Result ###
 我们提供我们的训练数据和结果，如下图所示：
