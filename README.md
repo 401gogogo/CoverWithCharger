@@ -14,6 +14,7 @@
 + 我们使用的python版本为3.7
 + 你可以点击此处来安装pytorch [this](https://github.com/pytorch/pytorch)
 ###### 2. Clone the repository:
+git https://github.com/401gogogo/CoverWithCharger
 ###### 3. Dataset
 + Our dataset is private
 ###### 4. Evaluation
