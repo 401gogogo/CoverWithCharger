@@ -9,10 +9,10 @@ import os.path as osp
 HOME = os.path.expanduser("~")
 
 #本机
-SIXray_ROOT = osp.join(HOME,'PycharmProjects','CoverWithCharger','data','Xray20190723')
+# SIXray_ROOT = osp.join(HOME,'PycharmProjects','CoverWithCharger','data','Xray20190723')
 
 # .138
-#SIXray_ROOT = osp.join(HOME, "otherProject/CoverWithCharger/data/Xray20190723/")
+SIXray_ROOT = osp.join(HOME, "otherProject/CoverWithCharger/data/Xray20190723/")
 
 # .85
 # Trained state_dict file path to open
@@ -30,7 +30,7 @@ sixray = {
     'num_classes': 3,
     'lr_steps': (20, 50, 150),
     'max_iter': 12000,
-    'max_epoch':200,
+    'max_epoch':100,
     'feature_maps': [38, 19, 10, 5, 3, 1],
     'min_dim': 300,
     'steps': [8, 16, 32, 64, 100, 300],
@@ -60,7 +60,7 @@ dataset = 'SIXRAY'
 basenet = 'vgg16_reducedfc.pth'
 
 # Batch size for training
-batch_size = 64
+batch_size = 128
 
 # Checkpoint state_dict file to resume training from
 resume = None
@@ -75,7 +75,7 @@ num_workers = 4
 lr = 1e-4
 
 # Momentum value for optim
-momentum = 0.99
+momentum = 0.9
 
 # Weight decay for SGD
 weight_decay = 5e-4
@@ -104,7 +104,7 @@ f = None
 val_save_folder = 'eval/'
 
 # Detection confidence threshold
-confidence_threshold = 0.2
+confidence_threshold = 0.01
 
 # Further restrict the number of predictions to parse
 top_k = 5
