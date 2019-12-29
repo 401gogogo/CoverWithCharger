@@ -79,6 +79,7 @@ def train():
             args.dataset_root = SIXray_ROOT
         cfg = sixray
         dataset = SIXrayDetection(root=args.dataset_root, transform=SSDAugmentation(cfg['min_dim'], MEANS))
+        print('训练集大小：',len(dataset))
     else:
         print("ERRO: Only Using default SIXRAY dataset_root.")
         return
