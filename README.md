@@ -20,7 +20,8 @@ git https://github.com/401gogogo/CoverWithCharger
 ###### 4. Evaluation
 ```
 cd CoverWithCharger
-python eval_5epoch_for.py --trained_model you_own_model_root --sixray_root data_root --imagesetfile data_set_root
+python test.py  #生成预测结果txt
+python calculate_map_test.py --predicted_file '预测结果文件路径'
 ```
 ###### 5. Training:
 ```
@@ -29,5 +30,5 @@ python train.py
 ```
 ### Result ###
 我们提供我们的训练数据和结果，如下图所示：
-![mAP](/result.png)
+![mAP](/result1_3.png)
 ![Loss](/1_2_iter.png)
