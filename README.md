@@ -15,6 +15,8 @@
 + 你可以点击此处来安装pytorch [this](https://github.com/pytorch/pytorch)
 ###### 2. Clone the repository:
 git https://github.com/401gogogo/CoverWithCharger
+模型太大无法上传github，请从北航网盘下载：
+https://bhpan.buaa.edu.cn:443/link/877731EC3DA818260C13DDB2FD5F5525
 ###### 3. Dataset
 + Our dataset is private
 ###### 4. Evaluation
